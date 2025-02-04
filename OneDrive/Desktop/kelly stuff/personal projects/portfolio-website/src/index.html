@@ -5,15 +5,327 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+        * {
+            font-family: "Josefin Sans", serif;
+        }
+        body {
+            background-color: rgb(23, 23, 25);
+        }
+        .nav-bar {
+            background-color: rgb(14, 14, 15);
+            z-index: 5;
+        }
+        .nav-menu li a:hover {
+            color: #5459e5;
+        }
+        .p-color {
+            color: #5459e5;
+        }
+        .s-color {
+            color: #4c4f8d;
+        }
+        h4 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .footer-section {
+            background-color: rgb(14, 14, 15);
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .img-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .img-container img {
+            width: 450px;
+            height: auto;
+            display: block;
+        }
+
+        /* Diagonal lines */
+        .img-container::before,
+        .img-container::after,
+        .img-container span {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 4px;
+            background-color: white;
+        }
+
+        .img-container::before {
+            top: 75px;
+            left: 110px;
+            transform: rotate(-45deg);
+        }
+        .img-container .top-blue {
+            background-color: #5459e5;
+            top: 65px;
+            left: 140px;
+            transform: rotate(-45deg);
+        }
+
+        .img-container::after {
+            bottom: 65px;
+            right: 140px;
+            transform: rotate(-45deg);
+        }
+
+        .img-container .bot-blue {
+            background-color: #5459e5;
+            bottom: 75px;
+            right: 110px;
+            transform: rotate(-45deg);
+        }
+        section {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .art-card {
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <!-- Nav Bar-->
-
+    <nav class="nav-bar text-white p-6 w-full fixed top-0">
+        <div class="mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold">My Portfolio</a>
+            <ul class="nav-menu hidden md:flex space-x-6 text-2xl">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Main Content-->
-    <h1> Hello </h1>
+
+    <section class="hero-section h-screen flex flex-col justify-center items-center text-white">
+        <div>
+            <h1 class="text-7xl mt-4">Hi, I'm <span class="p-color">Kelly Khuc</span></h1>
+            <p class="text-4xl s-color">A Passionate Web-Developer</p>
+        </div>
+    </section>
+
+    <section id="about"  class="abt-section">
+        <div class="container grid grid-cols-2 gap-6 text-white">
+            <div class="img-container p-6 flex flex-col justify-center items-center">
+                <img src="./assets/profile-pic.jpg" alt="profile-pic" width="450" height="auto">
+                <span class="top-blue"></span>
+                <span class="bot-blue"></span>
+            </div>
+            <div class="p-6 flex flex-col justify-center items-center">
+                <div>
+                    <h4 class="p-color text-[3.5rem] font-semibold pb-6">Who am I?</h4>
+                    <p class="text-[1.3rem] font-light">
+                        I'm a Computer Science Student at Simon Fraser University who is 
+                        passionate about designing beautiful and impactful applications 
+                        that solves real problems. As someone who fell in love with creating 
+                        and sharing art to others, I find the same joy of inspiring and 
+                        connecting with others in a meaningful way through creating projects for users. 
+                        <br>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="proj-section">
+        <div class="container text-white">
+            <h4 class="p-color text-[3.5rem] font-semibold pb-6">Projects</h4>
+            <div class="IW-section grid grid-cols-2 pb-[3rem] gap-6">
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        Incident Watch Application
+                    </h5>
+                    <p class="text-[1.2rem] pb-3">
+                        <span class="font-semibold">Abstract: </span>  Incident Watch is an online web application that 
+                        aims to increase the ease of reporting incidents 
+                        for employees and vonlunteers while streamlining 
+                        the management processes for administrators. We developed 
+                        Incident Watch as a team of five for our client Mission Possible.
+                        <br>
+                        <span class="font-semibold">Tech Stack:</span> <br>
+                        Front-end: Javascript, HTML5, CSS, Bootstrap. <br>
+                        Back-end: Java Spring Boot, Firebase (Authentication and Database), 
+                        Google Calendar REST API <br>
+                        Test framework: JUnit, MockMvc
+                        <br>
+                        <span class="font-semibold">My Role:</span> <br>
+                        Developed Front-end and Back-end of core features, set up report class database, 
+                        designed automated testing of core features, served as main communicator between 
+                        team and client.
+                    </p>
+                    <p>GitHub repo</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+            <div class="YD-section grid grid-cols-2 gap-6 pb-[3rem]">
+                <div>
+
+                </div>
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        Yelp Database Application
+                    </h5>
+                    <p class="text-[1.2rem] pb-3">
+                        <span class="font-semibold">Abstract: </span>  
+                        Incident Watch is an online web application that 
+                        aims to increase the ease of reporting incidents 
+                        for employees and vonlunteers while streamlining 
+                        the management processes for administrators.
+                        <br>
+                        <span class="font-semibold">Tech Stack:</span> <br>
+                        Python (Pymssql), SQL
+                        <br>
+                    </p>
+                    <p>GitHub repo</p>
+                </div>
+            </div>
+            <div class="BS-section grid grid-cols-2 gap-6 pb-[3rem]">
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        Bank Simulation Application
+                    </h5>
+                    <p class="text-[1.2rem] pb-3">
+                        <span class="font-semibold">Abstract: </span>  Incident Watch is an online web application that 
+                        aims to increase the ease of reporting incidents 
+                        for employees and vonlunteers while streamlining 
+                        the management processes for administrators. We developed 
+                        Incident Watch as a team of five for our client Mission Possible.
+                        <br>
+                        <span class="font-semibold">Tech Stack:</span> <br>
+                        C++
+                    </p>
+                    <p>GitHub repo</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="BB-section grid grid-cols-2 gap-6 pb-[3rem]">
+                <div>
+
+                </div>
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        SFU Bulletin Board
+                    </h5>
+                    <p class="text-[1.2rem]">
+                        <span class="font-semibold">Abstract: </span>  
+                        Incident Watch is an online web application that 
+                        aims to increase the ease of reporting incidents 
+                        for employees and vonlunteers while streamlining 
+                        the management processes for administrators.
+                        <br>
+                        <span class="font-semibold">Tech Stack:</span> <br>
+                        Python (Pymssql), SQL
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <section id="works" class="work-section text-white">
+        <div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section text-white">
+        <div class="container">
+            <h4 class="text-[3.5rem] p-color"> Skills</h4>
+            <div>
+                <div class="FE-skills">
+
+                </div>
+                <div class="BE-skills">
+
+                </div>
+                <div class="UI-skills">
+
+                </div>
+                <div class="other-skills">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="hobbies-section text-white">
+        <div class="art-works container flex flex-col justify-center items-center">
+            <h4 class="text-[3.5rem] p-color">My Artworks</h4>
+            <div class="art-container flex flex-wrap gap-6">
+                <div class="art-card">
+                    <img src="./assets/IAT208_Final_Drawing1.jpg" alt="lady-cigarette.jpg" width="450" height="auto">
+                </div>
+                <div class="art-card">
+                    <img src="./assets/lu-nwm.jpg" alt="lu-guang.jpg" width="450" height="auto">
+                </div>
+                <div class="art-card">
+                    <img src="./assets/megumi-nwm.jpg" alt="megumi.jpg" width="450" height="auto">
+                </div>
+                <div class="art-card">
+                    <img src="./assets/baku-nwm.jpg" alt="baku.jpg" width="450" height="auto">
+                </div>
+                <div class="art-card">
+                    <img src="./assets/usui-nwm.jpg" alt="usui.jpg" width="450" height="auto">
+                </div>
+                <div class="art-card">
+                    <img src="./assets/vase-and-fruits.jpg" alt="vase-and-fruits.jpg" width="450" height="auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section text-white">
+        <div>
+            
+        </div>
+    </section>
+
+    <div class="footer-section">
+        <div class="container grid grid-cols-2 gap-6 text-white font-normal">
+            <div class="left flex flex-col justify-center items-center">
+                <div>
+                    <p>Address:</p>
+                    <p>Coquitlam, BC, Canada</p>
+                    <p>V3E 0L2</p>
+                </div>
+            </div>
+            <div class="right flex flex-col justify-center items-center">
+                <div>
+                    <p>Links:</p>
+                    <p>LinkedIn</p>
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
