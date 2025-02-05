@@ -6,98 +6,10 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        
 
-        * {
-            font-family: "Josefin Sans", serif;
-        }
-        body {
-            background-color: rgb(23, 23, 25);
-        }
-        .nav-bar {
-            background-color: rgb(14, 14, 15);
-            z-index: 5;
-        }
-        .nav-menu li a:hover {
-            color: #5459e5;
-        }
-        .p-color {
-            color: #5459e5;
-        }
-        .s-color {
-            color: #4c4f8d;
-        }
-        h4 {
-            font-size: 4rem;
-        }
-        p {
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-        .footer-section {
-            background-color: rgb(14, 14, 15);
-        }
-        .container {
-            width: 70%;
-            margin: auto;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-
-        .img-container {
-            position: relative;
-            display: inline-block;
-        }
-
-        .img-container img {
-            width: 450px;
-            height: auto;
-            display: block;
-        }
-
-        /* Diagonal lines */
-        .img-container::before,
-        .img-container::after,
-        .img-container span {
-            content: "";
-            position: absolute;
-            width: 150px;
-            height: 4px;
-            background-color: white;
-        }
-
-        .img-container::before {
-            top: 75px;
-            left: 110px;
-            transform: rotate(-45deg);
-        }
-        .img-container .top-blue {
-            background-color: #5459e5;
-            top: 65px;
-            left: 140px;
-            transform: rotate(-45deg);
-        }
-
-        .img-container::after {
-            bottom: 65px;
-            right: 140px;
-            transform: rotate(-45deg);
-        }
-
-        .img-container .bot-blue {
-            background-color: #5459e5;
-            bottom: 75px;
-            right: 110px;
-            transform: rotate(-45deg);
-        }
-        section {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-        .art-card {
-            display: inline-block;
-        }
     </style>
 </head>
 <body>
@@ -246,6 +158,11 @@
                     </p>
                 </div>
             </div>
+
+            <div >
+
+            </div>
+
         </div>
     </section>
 
@@ -279,32 +196,60 @@
     <section id="hobbies" class="hobbies-section text-white">
         <div class="art-works container flex flex-col justify-center items-center">
             <h4 class="text-[3.5rem] p-color">My Artworks</h4>
-            <div class="art-container flex flex-wrap gap-6">
+            <div class="art-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
                 <div class="art-card">
-                    <img src="./assets/IAT208_Final_Drawing1.jpg" alt="lady-cigarette.jpg" width="450" height="auto">
+                    <img src="./assets/IAT208_Final_Drawing1.jpg" alt="lady-cigarette.jpg">
                 </div>
                 <div class="art-card">
-                    <img src="./assets/lu-nwm.jpg" alt="lu-guang.jpg" width="450" height="auto">
+                    <img src="./assets/vase-and-fruits1.jpg" alt="vase-and-fruits.jpg">
                 </div>
                 <div class="art-card">
-                    <img src="./assets/megumi-nwm.jpg" alt="megumi.jpg" width="450" height="auto">
+                    <img src="./assets/baku-nwm.jpg" alt="baku.jpg">
                 </div>
                 <div class="art-card">
-                    <img src="./assets/baku-nwm.jpg" alt="baku.jpg" width="450" height="auto">
+                    <img src="./assets/lu-nwm.jpg" alt="lu-guang.jpg">
                 </div>
                 <div class="art-card">
-                    <img src="./assets/usui-nwm.jpg" alt="usui.jpg" width="450" height="auto">
+                    <img src="./assets/megumi-nwm.jpg" alt="megumi.jpg">
                 </div>
+                
                 <div class="art-card">
-                    <img src="./assets/vase-and-fruits.jpg" alt="vase-and-fruits.jpg" width="450" height="auto">
+                    <img src="./assets/usui-nwm.jpg" alt="usui.jpg">
                 </div>
+                
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact-section text-white">
-        <div>
-            
+        <div class="container w-full flex flex-col justify-center items-center">
+            <h4 class="text-[3rem] p-color pb-6">Contact Me</h4>
+            <div class="contact-container">   
+                
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+        
+                    <button class="btn-primary self-center text-[1.3rem]" type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
