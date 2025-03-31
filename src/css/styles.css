@@ -3,6 +3,9 @@
 * {
     font-family: "Josefin Sans", serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: rgb(23, 23, 25);
 }
@@ -161,4 +164,31 @@ button:hover {
     cursor: pointer;
     max-width: 250px;
     text-align: center;
+}
+
+/* Social links */
+
+.footer-section .socials-section a {
+    font-size: 2rem;
+    margin-right: 0.3rem;
+}
+
+.footer-section .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-section .info-item {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section .info-container i {
+    font-size: 1.3rem;
+    padding-top: 3px;
+}
+.footer-section .info-container p {
+    margin: 0;
+    line-height: 1.4;
 }
