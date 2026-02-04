@@ -9,13 +9,6 @@ html {
 body {
     background-color: rgb(23, 23, 25);
 }
-.nav-bar {
-    background-color: rgb(14, 14, 15);
-    z-index: 5;
-}
-.nav-menu li a:hover {
-    color: #5459e5;
-}
 .p-color {
     color: #5459e5;
 }
@@ -29,14 +22,22 @@ h4 {
     font-size: 4rem;
 }
 p {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 300;
 }
-.footer-section {
+
+/* navbar */
+.nav-bar {
     background-color: rgb(14, 14, 15);
+    z-index: 5;
 }
+.nav-menu li a:hover {
+    color: #5459e5;
+}
+
+/* intro */
 .container {
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -48,13 +49,13 @@ p {
 }
 
 .img-container img {
-    width: 450px;
+    width: 400px;
     height: auto;
     display: block;
 }
 
 /* Diagonal lines */
-.img-container::before,
+/* .img-container::before,
 .img-container::after,
 .img-container span {
     content: "";
@@ -62,9 +63,9 @@ p {
     width: 150px;
     height: 4px;
     background-color: white;
-}
+} */
 
-.img-container::before {
+/* .img-container::before {
     top: 75px;
     left: 110px;
     transform: rotate(-45deg);
@@ -87,11 +88,62 @@ p {
     bottom: 75px;
     right: 110px;
     transform: rotate(-45deg);
-}
+} */
 section {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+
+/* work experience timeline */
+.timeline {
+    position: relative;
+    margin: 100px auto;
+}
+.timeline-card {
+    padding: 2.5rem 2.5rem;
+    position: relative;
+    width: 50%;
+}
+.text-box {
+    padding: 2rem;
+    background: #38383882;
+    position: relative;
+    border-radius: 6px;
+}
+.left-card {
+    left: 0;
+}
+.right-card {
+    left: 50%
+}
+.timeline .dot {
+    position: absolute;
+    background: #ffffff;
+    right: -0.6rem;
+    top: 8rem;
+}
+.right-card .dot {
+    left: -0.7rem;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 0.3rem;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+.timeline .date {
+    position: absolute;
+    top: 7.2rem;
+}
+
+
+/* artwork */
 .art-card {
     width: 100%;
     height: auto;
@@ -169,8 +221,13 @@ button:hover {
     text-align: center;
 }
 
-/* Social links */
 
+
+
+/* Footer */
+.footer-section {
+    background-color: rgb(14, 14, 15);
+}
 .footer-section .socials-section a {
     font-size: 2rem;
     margin-right: 0.3rem;
@@ -195,51 +252,3 @@ button:hover {
     margin: 0;
     line-height: 1.4;
 }
-
-
-.timeline {
-    position: relative;
-    margin: 100px auto;
-}
-.timeline-card {
-    padding: 2.5rem 2.5rem;
-    position: relative;
-    width: 50%;
-}
-.text-box {
-    padding: 2rem;
-    background: #38383882;
-    position: relative;
-    border-radius: 6px;
-}
-.left-card {
-    left: 0;
-}
-.right-card {
-    left: 50%
-}
-.timeline .dot {
-    position: absolute;
-    background: #ffffff;
-    right: -0.6rem;
-    top: 8rem;
-}
-.right-card .dot {
-    left: -0.7rem;
-}
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 0.3rem;
-    height: 100%;
-    background: #fff;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-}
-.timeline .date {
-    position: absolute;
-    top: 7.2rem;
-}
-

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Nav Bar-->
+    <nav class="nav-bar text-white p-6 w-full fixed top-0">
+        <div class="mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold">My Portfolio</a>
+            <ul class="nav-menu hidden md:flex space-x-6 text-2xl">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#technical-works">Works</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content-->
+
+    <section class="hero-section h-screen flex flex-col justify-center items-center text-white">
+        <div>
+            <h1 class="text-[5rem]">Hi, I'm <span class="p-color">Kelly Khuc</span></h1>
+            <p class="text-[2.8rem] s-color font-light">A Passionate Web-Developer</p>
+        </div>
+    </section>
+
+    <section id="about"  class="abt-section">
+        <div class="container grid grid-cols-2 gap-6 text-white">
+            <div class="img-container p-6 flex flex-col justify-center items-center">
+                <img src="./src/assets/profile-pic.jpg" alt="profile-pic" width="450" height="auto">
+                <span class="top-blue"></span>
+                <span class="bot-blue"></span>
+            </div>
+            <div class="p-6 flex flex-col justify-center items-center">
+                <div>
+                    <h4 class="p-color text-[3.5rem] font-semibold pb-6">Who am I?</h4>
+                    <p class="text-[1.3rem] font-light">
+                        I'm a Computer Science student at Simon Fraser University, who is 
+                        passionate about designing beautiful and impactful applications 
+                        that solves real problems. As someone who fell in love with creating 
+                        and sharing art with others, I feel this same joy and fulfillment from 
+                        building meaningful applications for myself and others. 
+                        <br>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <!-- <section id="technical-works" class="technical-works-section text-white">
+        <div class="container text-white">
+            <h4 class="text-[3.5rem] p-color font-semibold pb-6">Work Experience</h4>
+            <div class="work-card grid grid-cols-2 pb-[3rem] gap-6">
+                <div>
+                    <div class="pb-3">
+                        <h5 class="s-color text-[2.5rem]">
+                            Junior Developer 
+                        </h5>
+                        <h6 class="t-color text-[1.6rem] font-light">Aether Automation </h6>
+                    </div>
+                    <p class="text-[1.2rem]">
+                        • Contributed in development of customization projects for clients. <br>
+                        • Developed using Javascript, Python, and PHP.
+                    </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="work-card grid grid-cols-2 pb-[3rem] gap-6">
+                <div>
+                    
+                </div>
+                <div>
+                    <div class="pb-3">
+                        <h5 class="s-color text-[2.5rem]">
+                            Website Developer
+                        </h5>
+                        <h6 class="t-color text-[1.6rem] font-light">SFU Robotics Team</h6>
+                    </div>
+                    <p class="text-[1.2rem]">
+                        • Developed an interactive website featuring team information 
+                        and contact details to enhance outreach and promotion for the team <br>
+                        • Designed a responsive and user-friendly interface using React.js, HTML, and CSS
+                    </p>
+                </div>
+            </div>
+            <div class="work-card grid grid-cols-2 pb-[3rem] gap-6">
+                <div>
+                    <div class="pb-3">
+                        <h5 class="s-color text-[2.5rem]">
+                            Shop Owner
+                        </h5>
+                        <h6 class="t-color text-[1.6rem] font-light">Etsy</h6>
+                    </div>
+                    <p class="text-[1.2rem]">
+                        • Designed and sold digital paintings and merchandise on Etsy, 
+                        independently managed all aspects of sales, income, budgeting, 
+                        and product marketing <br>
+                        • Generated nearly 800 sales and over $6.4k in revenue by implementing 
+                        regular product modifications and strategic marketing initiatives <br>
+                        • Maintained consistent 98% customer satisfaction by effectively consulting 
+                        with customers and addressing their order specifications and concerns.
+                    </p>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="work-card grid grid-cols-2 pb-[3rem] gap-6">
+                <div>
+
+                </div>
+                <div>
+                    <div class="pb-3">
+                        <h5 class="s-color text-[2.5rem]">
+                            Customer Experience Associate
+                        </h5>
+                        <h6 class="t-color text-[1.6rem] font-light">TD Bank</h6>
+                    </div>
+                    <p class="text-[1.2rem]">
+                        • Consulted customers' financial needs and advised customers on money-saving practices <br>
+                        • Marketed available services and products to customers
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section> -->
+
+    <section id="technical-works" class="technical-works-section text-white">
+        <div class="container">
+            <h4 class="text-[3.5rem] p-color font-semibold text-center">My Work Experiences</h4>
+
+            <div class="timeline">
+
+                <div class="timeline-card left-card">
+                    <div class="dot w-5 h-5 rounded-full z-5"></div>
+                    <p class="date text-[2rem] z-5 right-[-21rem]">May 2025 - Dec 2025</p>
+                    <div class="text-box">
+                        <h5 class="s-color text-[2.5rem]">Junior Developer</h5>
+                        <h6 class="t-color text-[1.7rem] pb-3 font-light">Aether Automation</h6>
+                        <p>
+                            • Automated business processes across Zoho applications by developing robust Deluge scripts to streamline client operations<br>
+                            • Built and deployed data migration and integration workflows from Oracle NetSuite to Zoho CRM using Deluge and SuiteScript<br>
+                            • Designed and documented complex ERP system architectures in Lucidchart, aligning client requirements with scalable solutions
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-card right-card">
+                    <div class="dot w-5 h-5 rounded-full z-5"></div>
+                    <p class="date text-[2rem] z-5 left-[-19rem]">Dec 2024 - Current</p>
+                    <div class="text-box">
+                        <h5 class="s-color text-[2.5rem]">Team Website Developer</h5>
+                        <h6 class="t-color text-[1.7rem] pb-3 font-light">SFU Robotics Team</h6>
+                        <p>
+                            • Enabled the promotion of SFU Robotics Club media presence by developing an interactive website featuring the operating and recruiting information about the club<br>
+                            • Designed and implemented the responsive and user-friendly web application using React.js, HTML, and CSS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-card left-card">
+                    <div class="dot w-5 h-5 rounded-full z-5"></div>
+                    <p class="date text-[2rem] z-5 right-[-21rem]">Nov 2022 - Feb 2023</p>
+                    <div class="text-box">
+                        <h5 class="s-color text-[2.5rem]">Customer Experience Associate</h5>
+                        <h6 class="t-color text-[1.7rem] pb-3 font-light">TD Bank</h6>
+                        <p>
+                            • Processed a wide range of financial transactions including deposits, withdrawals, and bill payments with efficiency and accuracy<br>
+                            • Assisted in resolving customer concerns and provided tailored solutions to customer needs, effectively supporting their financial goals
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-card right-card">
+                    <div class="dot w-5 h-5 rounded-full z-5 "></div>
+                    <p class="date text-[2rem] z-5 left-[-21rem]">Oct 2020 - Nov 2022</p>
+                    <div class="text-box">
+                        <h5 class="s-color text-[2.5rem]">Shop Owner</h5>
+                        <h6 class="t-color text-[1.7rem] pb-3 font-light">Etsy</h6>
+                        <p>
+                            • Designed and sold digital paintings and merchandise on Etsy, independently managing all aspects of sales, income, budgeting, and product marketing<br>
+                            • Achieved 800+ sales and \$6.4K in revenue through continuous product optimization and marketing strategy, maintaining 98\% customer satisfaction
+                        </p>
+                    </div>
+                </div>
+
+                
+
+            </div>     
+    </div>
+    </section>
+
+    <section id="projects" class="proj-section">
+        <div class="container text-white">
+            <h4 class="p-color text-[3.5rem] font-semibold text-center pb-16">My Projects</h4>
+            <div class="IW-section grid grid-cols-2 pb-[6rem] gap-6">
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        Incident Watch Application
+                    </h5>
+                    <p class="text-[1.35rem] pb-3">
+                        <span class="font-semibold">Abstract: </span>  <br>
+                        The Incident Watch application
+                        aims to simplify incident reporting and the management 
+                        of these reports for our client.
+                        <br><br>
+                        <span class="font-semibold">Tech Stack:</span> <br>
+                        Languages: Javascript, Java, HTML5, CSS<br>
+                        Tools: GitHub, Firebase, Render<br>
+                        Frameworks: Spring Boot, JUnit, MockMvc, Bootstrap
+                    </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+            <div class="YD-section grid grid-cols-2 gap-6 pb-[6rem]">
+                <div>
+
+                </div>
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        Yelp Database Application
+                    </h5>
+                    <p class="text-[1.35rem] pb-3">
+                        <span class="font-semibold">Abstract: </span>  <br>
+                        The Yelp Database application provides a platform for 
+                        users to view and post reviews for businesses and connect with friends.
+                        <br><br>
+                        <span class="font-semibold">Tech Stack:</span> <br>
+                        Python (Pymssql), SQL
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="BS-section grid grid-cols-2 gap-6 pb-[6rem]">
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        Bank Simulation Application
+                    </h5>
+                    <p class="text-[1.35rem] pb-3">
+                        <span class="font-semibold">Abstract: </span>  <br>
+                        A Bank Simulator program that processes arrival and departure events 
+                        and calculates the average customer wait time.
+                        <br><br>
+                        <span class="font-semibold">Tech Stack:</span> <br>
+                        C++
+                    </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="BB-section grid grid-cols-2 gap-6 pb-[6rem]">
+                <div>
+
+                </div>
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        SFU Bulletin Board
+                    </h5>
+                    <p class="text-[1.35rem]">
+                        <span class="font-semibold">Abstract: </span> <br> 
+                        Designed the user-interface of an online SFU Bulletin Board, enabling users to view, post and manage news and events around SFU.
+                        <br><br>
+                        <span class="font-semibold">Tools:</span> <br>
+                        Figma
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="TP-section grid grid-cols-2 gap-6 pb-[3rem]">
+                
+                <div>
+                    <h5 class="s-color text-[2.5rem] pb-3">
+                        TopPick Application [Upcoming]
+                    </h5>
+                    <p class="text-[1.35rem]">
+                        <span class="font-semibold">Abstract: </span> <br> 
+                        The TopPick Application is a personal project that is still early in its development. The application aims to 
+                        provide the user with a reccomended order to apply to jobs to maximize acceptance as well as a personalized reccomended list 
+                        of skills and experiences the user should to attain to further maximize their chances.
+                        <br><br>
+                        <span class="font-semibold">Tech Stack:</span> <br>
+                        React.js, Node.js, Express.js, Tailwind.css, PostgreSQL
+                        <br>
+                    </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- <section id="skills" class="skills-section text-white">
+        <div class="container">
+            <h4 class="text-[3.5rem] p-color"> Skills</h4>
+            <div>
+                <div class="languages-skills">
+
+                </div>
+                <div class="frameworks-skills">
+
+                </div>
+                <div class="technologies-skills">
+
+                </div>
+                <div class="other-skills">
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="dig-art" class="dig-art-section text-white">
+        <div class="art-works container flex flex-col justify-center items-center">
+            <h4 class="text-[3.5rem] p-color">Digital Artworks</h4>
+            <div class="art-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                <div class="art-card">
+                    <img src="./src/assets/lu-nwm-crp.jpg" alt="lu-guang.jpg">
+                </div>
+                <div class="art-card">
+                    <img src="./src/assets/IAT208_Final_Drawing_crp.jpg" alt="lady-cigarette.jpg">
+                </div>
+                <div class="art-card">
+                    <img src="./src/assets/megumi-nwm.jpg" alt="megumi.jpg">
+                </div>
+                <!-- <div class="art-card">
+                    <img src="./src/src/assets/vase-and-fruits1.jpg" alt="vase-and-fruits.jpg">
+                </div> -->
+                <!-- <div class="art-card">
+                    <img src="./src/assets/baku-nwm.jpg" alt="baku.jpg">
+                </div> -->
+                <!-- <div class="art-card">
+                    <img src="./src/assets/usui-nwm.jpg" alt="usui.jpg">
+                </div> -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="animation" class="animation-section text-white">
+        <div class="art-works container flex flex-col justify-center items-center">
+            <h4 class="text-[3.5rem] p-color">Animaion Projects</h4>
+            <div class="art-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                <div>
+                    <video
+                    src="./src/assets/ayumu_animation.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="project-video"
+                    ></video>
+                </div>
+
+            </div>
+        </div>
+
+    </section>     -->
+
+    <section id="contact" class="contact-section text-white">
+        <div class="container w-full flex flex-col justify-center items-center">
+            <h4 class="text-[3rem] p-color pb-6">Contact Me</h4>
+            <div class="contact-container">   
+                
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+        
+                    <button class="btn-primary self-center text-[1.3rem]" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-section">
+        <div class="container grid grid-cols-2 gap-6 text-white font-normal">
+            <div class="left flex flex-col justify-center items-center">
+                <div class="info-container">
+                    <div class="info-item">
+                      <i class="fa-solid fa-house"></i>
+                      <div>
+                        <p>Coquitlam, BC, Canada</p>
+                        <p>V3E 0L2</p>
+                      </div>
+                    </div>
+                  
+                    <div class="info-item">
+                      <i class="fa-solid fa-envelope"></i>
+                      <p>htk@sfu.ca</p>
+                    </div>
+                  
+                    <div class="info-item">
+                      <i class="fa-solid fa-phone"></i>
+                      <p>2362348045</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="right flex flex-col items-center">
+                <div class="socials-section">
+                    <p>Links:</p>
+                    <a href="https://github.com/kelly2603" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kelly-khuc-42b476247/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
