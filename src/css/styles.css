@@ -147,8 +147,8 @@ section {
 .art-card {
     width: 100%;
     height: auto;
-    border: 2px solid white;
-    padding: 1.5rem;
+    border: 1.6px solid white;
+    padding: 1rem;
 }
 
 /*contact styles*/
