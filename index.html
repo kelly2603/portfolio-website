@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- JS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    (function() {
+        emailjs.init("service_u9nppkq");
+    })();
+    </script>
 </head>
 <body>
     <!-- Nav Bar-->
@@ -386,7 +394,7 @@
             <h4 class="text-[3rem] p-color pb-6">Contact Me</h4>
             <div class="contact-container">   
                 
-                <form action="#" method="POST">
+                <form id="contact-form">
                     <div class="input-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
