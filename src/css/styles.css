@@ -98,11 +98,11 @@ section {
 .hero-section h1,
 .hero-section p {
     opacity: 0;
-    transform: translateY(28px);
-    animation: fadeUp 0.7s ease forwards;
+    transform: translateY(35px);
+    animation: fadeUp 1s ease forwards;
 }
 .hero-section p {
-    animation-delay: 0.2s;
+    animation-delay: 0.35s;
 }
 
 @keyframes fadeUp {
@@ -115,8 +115,8 @@ section {
 /* About — scroll reveal */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 .reveal.from-left  { transform: translateX(-40px); }
 .reveal.from-right { transform: translateX(40px); }
@@ -235,8 +235,8 @@ button:hover {
 }
 
 .btn-primary {
-    padding: 12px 32px;
-    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    /* font-size: 1.4rem; */
     text-transform: uppercase;
     background: #4a6be5;
     color: #fff;
@@ -248,8 +248,8 @@ button:hover {
     text-align: center;
 }
 .btn-secondary {
-    padding: 12px 32px;
-    font-size: 1.4rem;
+    padding: 0.9rem 1.3rem;
+    /* font-size: 1.4rem; */
     text-transform: uppercase;
     background: #4a6ce500;
     color: #4a6be5;
