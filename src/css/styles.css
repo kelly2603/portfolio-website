@@ -141,7 +141,11 @@ section {
     position: absolute;
     top: 7.2rem;
 }
-
+/* project */
+.proj-video {
+    width: 95%;
+    padding: 0.5rem;
+}
 
 /* artwork */
 .art-card {
