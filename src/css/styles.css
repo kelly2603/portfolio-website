@@ -94,6 +94,37 @@ section {
     padding-bottom: 2rem;
 }
 
+/* Hero — fade up on load */
+.hero-section h1,
+.hero-section p {
+    opacity: 0;
+    transform: translateY(28px);
+    animation: fadeUp 0.7s ease forwards;
+}
+.hero-section p {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About — scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.from-left  { transform: translateX(-40px); }
+.reveal.from-right { transform: translateX(40px); }
+
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal.from-left.visible,
+.reveal.from-right.visible { transform: translateX(0); }
+
 
 /* work experience timeline */
 .timeline {

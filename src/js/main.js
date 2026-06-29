@@ -12,3 +12,11 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     alert("Failed to send message");
   });
 });
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
